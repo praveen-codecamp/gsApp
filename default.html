@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guest Services</title>
+
+
+
+
+
+    <!-- Bootstrap -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav navbar-nav list-group" id="accordion">
+                <li><a href="#" data-toggle="collapse" data-target="#reservations-nav-list" aria-expanded="false" data-parent="#accordion" aria-controls="reservations-nav-list">Frontdesk</a>
+                    <ul class="sub-nav-items collapse" id="reservations-nav-list">
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">Tape Chart</a></li>
+                        <li><a href="#">New Quote</a></li>
+                        <li><a href="#">Guest History</a></li>
+                        <li><a href="#">Groups</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="collapse" data-target="#accounts-nav-list" aria-expanded="false" data-parent="#accordion" aria-controls="accounts-nav-list">Accounts</a>
+                    <ul class="sub-nav-items collapse" id="accounts-nav-list">
+                        <li><a href="#">Accounts</a></li>
+                        <li><a href="#">Statements</a></li>
+                        <li><a href="#">Unit Owner Items</a></li>
+                        <li><a href="#">Travel Agent Items</a></li>
+                        <li><a href="#">Management Transfers</a></li>
+                        <li><a href="#">Account Distributions</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#" data-toggle="collapse" data-target="#guestservices-nav-list" aria-expanded="false" data-parent="#accordion" aria-controls="guestservices-nav-list">Guest Services</a>
+                    <ul class="sub-nav-items collapse" id="guestservices-nav-list">
+                        <li><a href="#">Housekeeping Status</a></li>
+                        <li><a href="#">Task List</a></li>
+                        <li><a href="#">Room Maintenance</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="collapse" data-target="#inventory-nav-list" aria-expanded="false" data-parent="#accordion" aria-controls="inventory-nav-list">Inventory</a>
+                    <ul class="sub-nav-items collapse" id="inventory-nav-list">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Seasons</a></li>
+                        <li><a href="#">Rates</a></li>
+                        <li><a href="#">Rules</a></li>
+                        <li><a href="#">Distribution</a></li>
+                        <li><a href="#">Policies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="collapse" data-target="#setup-nav-list" aria-expanded="false" data-parent="#accordion" aria-controls="setup-nav-list">Setup</a>
+                    <ul class="sub-nav-items collapse" id="setup-nav-list">
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Room Classes</a></li>
+                        <li><a href="#">Taxes</a></li>
+                        <li><a href="#">Ledger Accounts</a></li>
+                        <li><a href="#">Merchant Services</a></li>
+                        <li><a href="#">Document Templates</a></li>
+                        <li><a href="#">List Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="collapse" data-target="#admin-nav-list" aria-expanded="false" data-parent="#accordion" aria-controls="admin-nav-list">Admin</a>
+                    <ul class="sub-nav-items collapse" id="admin-nav-list">
+                        <li><a href="#">Client Info</a></li>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Roles</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="collapse" data-target="#nightaudit-nav-list" aria-expanded="false" data-parent="#accordion" aria-controls="nightaudit-nav-list">Night Audit</a>
+                    <ul class="sub-nav-items collapse" id="nightaudit-nav-list">
+                        <li><a href="#">Period Status</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="collapse" data-target="#reports-nav-list" aria-expanded="false" data-parent="#accordion" aria-controls="reports-nav-list">Reports</a>
+                    <ul class="sub-nav-items collapse" id="reports-nav-list">
+                        <li><a href="#">Account Balances</a></li>
+                        <li><a href="#">Ledger Balances</a></li>
+                        <li><a href="#">Merchant Trans</a></li>
+                        <li><a href="#">Deposit</a></li>
+                        <li><a href="#">Daily Flash</a></li>
+                        <li><a href="#">Room Forecast</a></li>
+                        <li><a href="#">Net Sales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="overlay" id="navWrapper"></div>
+            <header class="header">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="menu-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                            <a class="navbar-brand" href="#">
+                                <img src="../assets/img/innr-logo.png" alt="innRoad" title="innRoad">
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav flex-container">
+                                <li><a href="#"><img src="img/frontdesk.png" alt="FrontDesk"> Frontdesk</a></li>
+                                <li><a href="#"><img src="img/user.png" title="Accounts" alt="Accounts">Accounts</a></li>
+                                <li class="active flex12em"><a href="#"><img src="img/guest-services.png" alt="Guest Services" title="Guest Services">Guest Services</a></li>
+                                <li><a href="#"><img src="img/inventory.png" title="Inventory" alt="Inventory">Inventory</a></li>
+                                <li><a href="#"><img src="img/setup.png" title="Setup" alt="Setup">Setup</a></li>
+                                <li><a href="#"><img src="img/admin.png" title="Admin" alt="Admin">Admin</a></li>
+                                <li><a href="#"><img src="img/night-audit.png" title="Night Audit" alt="Night Audit">Night Audit</a></li>
+                                <li><a href="#"><img src="img/reports.png" title="Reports" alt="Reports">Reports</a></li>
+                                <li class="flex18em of-inherit property-list">
+                                    <select class="selectpicker property-select">
+                                        <option>Innroad</option>
+                                        <option>Property One</option>
+                                        <option>Property Two</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <div class="user-account dropdown">
+                                <a href="#" class="user-account-header dropdown-toggle" data-toggle="dropdown">PK</a>
+                                <ul class="user-details-dropdown dropdown-menu dropdown-menu-right">
+                                    <li><a href="#" class="user-name">Praveen Kumar</a></li>
+                                    <li><a href="#" class="user-profile">Profile</a></li>
+                                    <li><a href="#" class="user-logout">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </nav>
+                <div class="navbar navbar-inverse sub-main-nav hidden-sm">
+                    <div class="container">
+                        <ul class="nav navbar-nav sub-nav-items">
+                            <li><a href="#">Room Status</a></li>
+                            <li><a href="#">Task List</a></li>
+                            <li><a href="#">Room Maintenance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address." aria-invalid="false">
+                        <p class="help-block text-danger"></p>
+                        <div class="angle-icon"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

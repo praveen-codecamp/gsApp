@@ -1,0 +1,55 @@
+Reservation
+	Reservations
+	Tape Chart
+	New Quote
+	Guest History
+	Groups
+	
+Accounts
+	Accounts
+	Statements
+	Unit Owner Items
+	Travel Agent Items
+	Management Transfers
+	Account Distributions
+	
+Guest Services
+	Housekeeping Status
+	Task List
+	Room Maintenance
+
+Inventory
+	Overview
+	Seasons
+	Rates
+	Rules
+	Distribution
+	Policies
+
+Setup
+	Properties
+	Room Classes
+	Taxes
+	Ledger Accounts
+	Merchant Services
+	Document Templates
+	List Management
+
+Admin
+	Client Info
+	Users
+	Roles
+
+Night Audit
+	Period Status
+
+Reports
+	Account Balances
+	Ledger Balances
+	Merchant Trans
+	Deposit
+	Daily Flash
+	Room Forecast
+	Net Sales
+
+	

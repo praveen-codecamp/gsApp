@@ -1,0 +1,264 @@
+$navbar-image-height: 24px;
+$navbar-image-padding: $line-height-computed+$navbar-image-height;
+$navbar-padding-vertical:(($navbar-height - $navbar-image-padding) / 2);
+.header {
+    .navbar-default.navbar {
+        width: 100%;
+        z-index: 999;
+        border-bottom-color: darken($primary-color, 40%);
+        .navbar-collapse {
+            float: left;
+            @include calc(width, '100% - 140px');
+        }
+        .navbar-nav {
+            @include calc(width, '100% - 60px');
+            >li {
+                overflow: hidden;
+                >a {
+                    @include truncate();
+                    opacity: 1;
+                    border-right: 1px solid darken($primary-color, 10%);
+                    padding: $navbar-padding-vertical $navbar-padding-horizontal;
+                    height: 70px;
+                    img {
+                        display: block;
+                        margin: 0 auto 3px;
+                        height: 24px;
+                        width: 29px;
+                        &.nav-reservation {
+                            background: url(../img/nav-sprite-24.png) no-repeat
+                        }
+                        &.nav-accounts {
+                            background: url(../img/nav-sprite-24.png) 0 -30px no-repeat
+                        }
+                        &.nav-guest-services {
+                            background: url(../img/nav-sprite-24.png) 0 -60px no-repeat
+                        }
+                        &.nav-inventory {
+                            background: url(../img/nav-sprite-24.png) 0 -90px no-repeat
+                        }
+                        &.nav-setup {
+                            background: url(../img/nav-sprite-24.png) 0 -120px no-repeat
+                        }
+                        &.nav-admin {
+                            background: url(../img/nav-sprite-24.png) 0 -150px no-repeat
+                        }
+                        &.nav-night-audit {
+                            background: url(../img/nav-sprite-24.png) 0 -180px no-repeat
+                        }
+                        &.nav-reports {
+                            background: url(../img/nav-sprite-24.png) 0 -210px no-repeat
+                        }
+                    }
+                }
+            }
+        }
+        /*Toggle Nav*/
+        .navbar-toggle {
+            float: left;
+            background: none;
+            @include add-border(0, transparent, all);
+            color: set-text-color($primary-color);
+            span {
+                background-color: set-text-color($primary-color);
+            }
+        }
+        .navbar-toggle:hover,
+        .navbar-toggle:focus {
+            background: none !important;
+            color: set-text-color($primary-color);
+            @include add-border(0, transparent, all)
+        }
+        .icon-bar {
+            width: 22px;
+            @include custom-transition(all, .2s, ease)
+        }
+        .top-bar {
+            @include transform(45deg);
+            transform-origin: 10% 10%;
+        }
+        .middle-bar {
+            opacity: 0;
+        }
+        .bottom-bar {
+            @include transform(-45deg);
+            transform-origin: 10% 90%;
+        }
+        .collapsed {
+            .top-bar {
+                @include transform(0)
+            }
+            .middle-bar {
+                opacity: 1;
+            }
+            .bottom-bar {
+                @include transform(0)
+            }
+        }
+    }
+    .navbar.navbar-default {
+        border: 0
+    }
+    /* Sub-Main-Nav */
+    .navbar.sub-main-nav {
+        z-index: 1;
+        width: 100%;
+        min-height: 40px;
+        @include add-border($base-border-width, $primary-border-color, bottom);
+        @include add-border($base-border-0, $primary-border-color, top);
+        ul {
+            @include add-border($base-border-width, $primary-border-color, left);
+        }
+        li {
+            float: left;
+            @include add-border($base-border-width, $primary-border-color, right);
+            a {
+                color: set-text-color($navbar-inverse-bg);
+                padding: $padding-large-vertical;
+            }
+            &.active a {
+                background: $secondary-color;
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+    .navbar {
+        .navbar-brand {
+            >img{
+                margin-top: 10px
+            }
+        }
+    }
+    /* Property List */
+    .bootstrap-select.property-select {
+        width: 200px !important;
+        height: 70px;
+        .btn.btn-default {
+            height: 70px;
+            padding-left: 30px;
+            padding-right: 60px;
+            background: darken($primary-color, 5%);
+            border: 0;
+            color: set-text-color(darken($primary-color, 5%));
+        }
+        .dropdown-menu {
+            padding: 0;
+            li {
+                display: table;
+                width: 100%;
+                @include add-border($base-border-width, $primary-border-color, bottom);
+                >a {
+                    opacity: 1;
+                    padding: 11px 15px;
+                    height: 70px;
+                    display: table-cell;
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .bootstrap-select.btn-group .dropdown-menu li a {
+        color: #333
+    }
+    .user-account {
+        float: right;
+        width: 60px;
+        .user-account-header {
+            color: set-text-color(darken($primary-color, 5%));
+            @include border-radius(100%);
+            background: lighten($gray, 40%);
+            display: block;
+            width: 35px;
+            height: 35px;
+            padding: 8px;
+            line-height: 18px;
+            margin: 16px auto;
+            text-decoration: none
+        }
+        &.open .user-account-header {
+            color: set-text-color(darken($primary-color, 5%));
+            @include border-radius(0);
+            background: darken($primary-color, 10%);
+            width: 100%;
+            height: 70px;
+            padding: 27px 20px;
+            line-height: 18px;
+            margin: 0;
+        }
+        .user-details-dropdown.dropdown-menu {
+            padding: 0;
+            @include add-border($base-border-width, $primary-border-color, bottom);
+            li {
+                display: table;
+                width: 100%;
+                @include add-border(1px, lighten($gray, 40%), bottom)>a {
+                    text-decoration: none;
+                    opacity: 1;
+                    padding: 11px 15px;
+                    height: 70px;
+                    display: table-cell;
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+
+/* Sidebar Styles */
+
+#sidebar-wrapper {
+    .sidebar-nav {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        margin: 0 !important;
+        padding: 0;
+        list-style: none;
+        li {
+            text-indent: 20px;
+            line-height: 40px;
+            a {
+                display: block;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                    background: rgba(255, 255, 255, 0.2);
+                }
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+    a {
+        color: #999999;
+        &:hover {
+            color: #fff;
+            background: none;
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .navbar {
+        .navbar-brand {
+            width: calc(100% - 60px)
+        }
+    }
+}
+
+@media (max-width:1248px) {}
+
+@media (max-width:1024px) {}
+
+@media (min-width:991px) {}

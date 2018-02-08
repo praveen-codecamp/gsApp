@@ -1,0 +1,18 @@
+.btn {
+    @include border-radius(0);
+    &:hover{
+        background:darken(20%)
+    }
+}
+
+.btn-success:hover, .btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open>.btn-success.dropdown-toggle:hover, .open>.btn-success.dropdown-toggle:focus, .open>.btn-success.dropdown-toggle.focus{
+    background:darken($secondary-color,25%)
+}
+.float-e-margins .btn {
+  margin-bottom: 5px;
+}
+
+.btn-w-m {
+  min-width: 120px;
+}
+

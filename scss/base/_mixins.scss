@@ -1,0 +1,89 @@
+/* Mixins */
+@mixin border-radius($radius){
+    -moz-border-radius:$radius !important;
+    -webkit-border-radius:$radius !important;
+    border-radius:$radius !important;
+}
+
+@mixin add-border($size, $color, $position){
+    @if $position == 'all'{
+        border:$size solid $color;
+    } @else if $position == 'top'{
+      border-top:$size solid $color;  
+    } @else if $position == 'bottom'{
+      border-bottom:$size solid $color;  
+    } @else if $position == 'right'{
+      border-right:$size solid $color;  
+    } @else if $position == 'left'{
+      border-left:$size solid $color;  
+    } @else if $position == 'leftright'{
+      border-left:$size solid $color;  
+      border-right:$size solid $color;  
+    } @else if $position == 'topbottom'{
+      border-top:$size solid $color;  
+      border-bottom:$size solid $color;  
+    } @else if $position == 'bottomleft'{
+      border-left:$size solid $color;  
+      border-bottom:$size solid $color;  
+    } @else if $position == 'bottomright'{
+      border-right:$size solid $color;  
+      border-bottom:$size solid $color;  
+    } @else if $position == 'topleft'{
+      border-top:$size solid $color;  
+      border-left:$size solid $color;  
+    } @else if $position == 'topright'{
+      border-top:$size solid $color;  
+      border-right:$size solid $color;  
+    }
+}
+
+
+
+
+@mixin transform($deg){
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+
+
+/* Animations */
+@mixin transition(){    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+@mixin custom-transition($all,$time,$animation){    
+    -webkit-transition: $all,$time,$animation;
+    -moz-transition: $all,$time,$animation;
+    -o-transition: $all,$time,$animation;
+    transition: $all,$time,$animation;
+}
+
+
+@mixin truncate(){
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+
+@mixin bg-color($bg-color){
+    background: $bg-color
+}
+@mixin angle-icon {
+    @include add-border($base-border-width, $primary-border-color, bottomright)
+}
+
+
+
+@mixin circle(){}

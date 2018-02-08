@@ -1,0 +1,923 @@
+<section class="content-wrapper">
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+            <div class="dateRanges">
+                <label class="dateRangeLabel">Task for&nbsp;</label>
+                <span id="reportrange" class="reportrange padL-25 minusMarL-25"></span>
+            </div>           
+        </div>
+        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+            <div class="filter-option">
+                <ul class="search-filter flex-container list-group">
+                    <li class="todo list-group-item">
+                        <span class="stats-value badge badge-default">8</span>
+                        <span class="stats-name">To Do</span>
+                    </li>
+                    <li class="inspection list-group-item">
+                        <span class="stats-value badge badge-default">0</span>
+                        <span class="stats-name">Inspection</span>
+                    </li>
+                    <li class="done list-group-item">
+                        <span class="stats-value badge badge-default">0</span>
+                        <span class="stats-name">Done</span>
+                    </li>
+                    <li class="all list-group-item">
+                        <span class="stats-value badge badge-default">8</span>
+                        <span class="stats-name">All</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row hidden visible-lg visible-md">
+                    <div class="col-md-12">
+                        <div class="ng-leftPanel hide">
+                            <h2 class="filterHeading">FILTER BY<span class="pull-right">Clear</span></h2>
+                            <div class="panel-group gs-panel-group " id="accordionMenu" role="tablist" aria-multiselectable="true">
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="dateRange">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                                                Date <i class="demo-icon icon-plus-1"></i><i class="demo-icon icon-minus-1"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseZero" class="panel-collapse collapse in" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="gs-panel-content">
+                                                <ul class="gs-filterList">
+                                                    <li>
+                                                        <label class="gs-filterLabel">From</label>
+                                                        <div class="input-group calendarIcon">
+                                                            <span class="input-group-addon bg-white"><i class="fa fa-calendar color-blue" aria-hidden="true"></i></span>
+                                                            <input class="form-control gs-input" value="11/03/2016" type="text">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <label class="gs-filterLabel">To</label>
+                                                        <div class="input-group calendarIcon">
+                                                            <span class="input-group-addon bg-white"><i class="fa fa-calendar color-blue" aria-hidden="true"></i></span>
+                                                            <input class="form-control gs-input" value="11/03/2016" type="text">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="assignee">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                Assignee <i class="demo-icon icon-plus-1"></i><i class="demo-icon icon-minus-1"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="assignee">
+                                        <div class="panel-body">
+                                            <div class="gs-panel-content">
+                                                <ul class="gs-filterList">
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" />
+                                                                <span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Aaron</span> <span class="gs-statsNumber">(3)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Berd</span> <span class="gs-statsNumber">(3)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Austin</span> <span class="gs-statsNumber">(2)</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="category">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Category <i class="demo-icon icon-plus-1"></i><i class="demo-icon icon-minus-1"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="category">
+                                        <div class="panel-body">
+                                            <div class="gs-panel-content">
+                                                <ul class="gs-filterList">
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Frontdesk</span> <span class="gs-statsNumber">(0)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Housekeeping</span> <span class="gs-statsNumber">(4)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Maintainance</span> <span class="gs-statsNumber">(3)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Others</span> <span class="gs-statsNumber">(0)</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="taskType">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Task Type <i class="demo-icon icon-plus-1"></i><i class="demo-icon icon-minus-1"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="taskType">
+                                        <div class="panel-body">
+                                            <div class="gs-panel-content">
+                                                <ul class="gs-filterList">
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Special Request</span> <span class="gs-statsNumber">(3)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Full Cleaning</span> <span class="gs-statsNumber">(4)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Stay over Clean...</span> <span class="gs-statsNumber">(2)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Appliance not...</span> <span class="gs-statsNumber">(3)</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="occupancy">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Occupancy <i class="demo-icon icon-plus-1"></i><i class="demo-icon icon-minus-1"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="occupancy">
+                                        <div class="panel-body">
+                                            <div class="gs-panel-content">
+                                                <ul class="gs-filterList">
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Vacant</span> <span class="gs-statsNumber">(1)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Occupied</span> <span class="gs-statsNumber">(7)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Out of Order</span> <span class="gs-statsNumber">(0)</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="status">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                Zone <i class="demo-icon icon-plus-1"></i><i class="demo-icon icon-minus-1"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="status">
+                                        <div class="panel-body">
+                                            <div class="gs-panel-content">
+                                                <ul class="gs-filterList">
+
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">1st Floor</span> <span class="gs-statsNumber">(0)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">2nd Floor</span> <span class="gs-statsNumber">(3)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">3rd Floor</span> <span class="gs-statsNumber">(1)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">4th Floor</span> <span class="gs-statsNumber">(4)</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="roomClass">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                Room Class <i class="demo-icon icon-plus-1"></i><i class="demo-icon icon-minus-1"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="roomClass">
+                                        <div class="panel-body">
+                                            <div class="gs-panel-content">
+                                                <ul class="gs-filterList">
+
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">DLX</span> <span class="gs-statsNumber">(5)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">BS</span> <span class="gs-statsNumber">(5)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">BPS</span> <span class="gs-statsNumber">(5)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">SPS</span> <span class="gs-statsNumber">(5)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">OVS</span> <span class="gs-statsNumber">(5)</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="includePastTasks">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                Include Past Tasks <i class="demo-icon icon-plus-1"></i><i class="demo-icon icon-minus-1"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="includePastTasks">
+                                        <div class="panel-body">
+                                            <div class="gs-panel-content">
+                                                <ul class="gs-filterList">
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">Yes</span> <span class="gs-statsNumber">(8)</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkLabel">
+                                                            <span class='checkBox'>
+                                                                <input type="checkbox" /><span></span>
+                                                            </span>
+                                                            <span class="gs-textTrim">No</span> <span class="gs-statsNumber">(0)</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="ng-rightPanel">
+                            <div class="row gs-marB-20">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="input-group">
+                                                <div class="input-group-btn gs-width50P">
+                                                    <input type="text" class="form-control gs-input" placeholder="Search Room#, Acc#, Details and more">
+                                                </div>
+                                                <div class="input-group-btn gs-searchSubmit">
+                                                    <button type="submit" id="searchsubmit" value="Search" class="btn btn-success"><span class="glyphicon glyphicon-search hidden visible-md visible-lg"></span><span class="hidden visible-xs visible-sm">Search</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">                                    
+                                    <div class="pull-right">
+                                        <!--<div class="btn-group gs-marR-5">
+                                            <div class="dropdown gs-bulkAction">
+                                                <a href="#" class="dropdown-toggle color-gray btn btn-default mediumBtn" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bulk Action <span class="bs-caret"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                                                <ul class="dropdown-menu gs-borderR0" id="menu3" aria-labelledby="drop6">
+                                                    <li><a href="#">Assign Staff</a></li>
+                                                    <li><a href="#">Change Status</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>-->
+                                        <div class="dropdown gs-dropdown btn-group gs-marR-5">
+                                            <a class="btn gs-btn mediumBtn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bulk Action <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a href="#" data-toggle="modal" data-target="#bulk-assign">Assign Staff</a></li>
+                                                <li><a href="#">Change Status</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown gs-dropdown btn-group gs-marR-5">
+                                            <a class="btn gs-btn mediumBtn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a href="TaskListView.html" target="_blank">All Assignees</a></li>
+                                                <li><a href="TaskListView.html" target="_blank">By Assignees</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group gs-marR-5">
+                                            <a href="#" data-toggle="modal" data-target="#bulkDelete" class="btn gs-btn mediumBtn">Delete Task</a>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a href="#" data-toggle="modal" data-target="#addTask" class="btn color-white btn-success gs-btn mediumBtn">Add Task <i class="demo-icon icon-plus-1 gs-fontSize-18 gs-marL-5"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table gs-table table-hover gs-veticalAM gs-tdPad10 taskList">
+                                <thead class="text-uppercase">
+                                    <tr>
+                                        <th class="gs-cbColoum">
+                                            <span class='checkBox'><input type="checkbox" /><span></span></span>
+                                        </th>
+                                        <th>Task Type</th>
+                                        <th>Location</th>
+                                        <th>For</th>
+                                        <th>Occupancy</th>
+                                        <th>Due On</th>
+                                        <th class="gs-width125">Assigned</th>
+                                        <th>Zone</th>
+                                        <th class="gs-width140">Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class='checkBox'><input type="checkbox" checked="checked" /><span></span></span></td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">
+                                            <div class="gs-displayTable">
+                                                <span class="gs-displayTable-cell">
+                                                    <span class="gs-iconCircle bg-orange gs-marR-5"><span class="icon gs-icon-maintainance"></span></span>
+                                                </span>
+                                                <span class="gs-displayTable-cell firstLetterCaps">appliance not working</span>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">201</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Internal</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Vacant</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">11 Mar (10:20AM)</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">Berd</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="Berd" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle"><strong>B</strong>erd</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>aron</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>ustin</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">2nd Floor</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">To Do</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="To Do" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle">To Do</li>
+                                                                <li><span class="gs-searchTitle">Inspection</li>
+                                                                <li><span class="gs-searchTitle">Done</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="gs-circle gs-editPencile gs-border1" data-toggle="modal" data-target="#myModal">
+                                                <span class="icon gs-icon-edit color-blue gs-fontSize-18"></span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class='checkBox'><input type="checkbox" /><span></span></span></td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">
+                                            <div class="gs-displayTable">
+                                                <span class="gs-displayTable-cell">
+                                                    <span class="gs-iconCircle bg-green gs-marR-5"><span class="icon gs-icon-housekeeping gs-fontSize-28"></span></span>
+                                                </span>
+                                                <span class="gs-displayTable-cell firstLetterCaps">Refil Minibar</span>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">202</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Vania Viegas</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Occupied</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">11 Mar (10:40AM)</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">Aaron</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="Aaron" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>aron</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>B</strong>erd</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>ustin</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">4th Floor</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">To Do</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="To Do" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle">To Do</li>
+                                                                <li><span class="gs-searchTitle">Inspection</li>
+                                                                <li><span class="gs-searchTitle">Done</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="gs-circle gs-editPencile gs-border1" data-toggle="modal" data-target="#myModal">
+                                                <span class="icon gs-icon-edit color-blue gs-fontSize-18"></span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class='checkBox'><input type="checkbox" /><span></span></span></td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">
+                                            <div class="gs-displayTable">
+                                                <span class="gs-displayTable-cell">
+                                                    <span class="gs-iconCircle bg-blue gs-marR-5"><span class="icon gs-icon-more gs-fontSize-19"></span></span>
+                                                </span>
+                                                <span class="gs-displayTable-cell firstLetterCaps">Guest Note</span>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Unassigned</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">David DeAngelo</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Vacant</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">11 Mar (12:30PM)</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">Austin</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="Austin" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>ustin</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>aron</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>B</strong>erd</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">4th Floor</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">To Do</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="To Do" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle">To Do</li>
+                                                                <li><span class="gs-searchTitle">Inspection</li>
+                                                                <li><span class="gs-searchTitle">Done</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="gs-circle gs-editPencile gs-border1" data-toggle="modal" data-target="#myModal">
+                                                <span class="icon gs-icon-edit color-blue gs-fontSize-18"></span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class='checkBox'><input type="checkbox" /><span></span></span></td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">
+                                            <div class="gs-displayTable">
+                                                <span class="gs-displayTable-cell">
+                                                    <span class="gs-iconCircle bg-orange gs-marR-5"><span class="icon gs-icon-maintainance"></span></span>
+                                                </span>
+                                                <span class="gs-displayTable-cell firstLetterCaps">Appliance not working</span>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">205</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Helen Pastras</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Vacant</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">11 Mar (10:20AM)</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">Berd</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="Berd" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle"><strong>B</strong>erd</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>aron</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>ustin</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">2nd Floor</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">To Do</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="To Do" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle">To Do</li>
+                                                                <li><span class="gs-searchTitle">Inspection</li>
+                                                                <li><span class="gs-searchTitle">Done</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="gs-circle gs-editPencile gs-border1" data-toggle="modal" data-target="#myModal">
+                                                <span class="icon gs-icon-edit color-blue gs-fontSize-18"></span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class='checkBox'><input type="checkbox" /><span></span></span></td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">
+                                            <div class="gs-displayTable">
+                                                <span class="gs-displayTable-cell">
+                                                    <span class="gs-iconCircle bg-green gs-marR-5"><span class="icon gs-icon-housekeeping gs-fontSize-28"></span></span>
+                                                </span>
+                                                <span class="gs-displayTable-cell firstLetterCaps">Refil Minibar</span>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Pool Area</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Internal</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">N/A</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">11 Mar (10:40AM)</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">Aaron</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="Aaron" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>aron</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>B</strong>erd</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>ustin</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">Pool Area</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">To Do</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="To Do" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle">To Do</li>
+                                                                <li><span class="gs-searchTitle">Inspection</li>
+                                                                <li><span class="gs-searchTitle">Done</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="gs-circle gs-editPencile gs-border1" data-toggle="modal" data-target="#myModal">
+                                                <span class="icon gs-icon-edit color-blue gs-fontSize-18"></span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class='checkBox'><input type="checkbox" /><span></span></span></td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">
+                                            <div class="gs-displayTable">
+                                                <span class="gs-displayTable-cell">
+                                                    <span class="gs-iconCircle bg-blue gs-marR-5"><span class="icon gs-icon-more gs-fontSize-19"></span></span>
+                                                </span>
+                                                <span class="gs-displayTable-cell firstLetterCaps">Guest Note</span>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">ESPN Conference</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">ESPN Conference</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">N/A</td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">11 Mar (12:30PM)</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">Austin</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="Austin" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>ustin</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>A</strong>aron</span></li>
+                                                                <li><span class="gs-searchTitle"><strong>B</strong>erd</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td data-toggle="modal" data-target="#myModal" class="cursorP">N/A</td>
+                                        <td>
+                                            <div class="editContent">
+                                                <label class="gs-labelNormal">To Do</label>
+                                                <div class="editMode gs-confirmOptions">
+                                                    <div class="form-group gs-autoSuggest gs-iconGroup gs-marB-0">
+                                                        <a class="rightIcon glyphicon glyphicon-search"></a>
+                                                        <a class="rightIcon glyphicon glyphicon-down"></a>
+                                                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw rightIcon"></i>
+                                                        <i class="fa fa-angle-down rightIcon" aria-hidden="true"></i>
+                                                        <span class="icon gs-icon-edit gs-fontSize-18 rightIcon"></span>
+                                                        <input type="text" class="form-control gs-input" value="To Do" />
+                                                        <div class="gs-autoSuggestList">
+                                                            <ul>
+                                                                <li><span class="gs-searchTitle">To Do</li>
+                                                                <li><span class="gs-searchTitle">Inspection</li>
+                                                                <li><span class="gs-searchTitle">Done</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gs-confirm">
+                                                        <a type="submit" class="btn save" title="Save"><span></span></a>
+                                                        <a type="cancel" class="btn cancel" title="Cancel"><span></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="gs-circle gs-editPencile gs-border1" data-toggle="modal" data-target="#myModal">
+                                                <span class="icon gs-icon-edit color-blue gs-fontSize-18"></span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+</section>

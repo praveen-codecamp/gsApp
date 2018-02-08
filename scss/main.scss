@@ -1,0 +1,54 @@
+/*
+    GuestServices with Bootstrap Sass
+    Author: Praveen
+    version: 0.0.1
+*/
+
+
+
+
+@import 'functions';
+
+/*BASE - Base styles, variables, Mixins, ect. */
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+@import 'base/_base.scss';
+/*@import 'base/_formCtrlStyles.scss';*/
+
+/* MODULES - Individual site components */
+@import 'modules/_typography.scss';
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_sections.scss';
+@import 'modules/_components.scss';
+@import 'modules/_icons.scss';
+
+/* LAYOUTS - Page Layouts styles */
+@import 'layouts/_nav.scss';
+@import 'layouts/_header.scss';
+@import 'layouts/_footer.scss';
+
+
+
+
+
+/* Custom Styles */
+@import 'functions';
+
+@import 'customStyles';
+
+
+#wrapper {
+    padding-left: 0;
+    @include transition();
+}
+.navbar-fixed-top, .navbar-fixed-bottom{@include transition()}
+#wrapper.toggled .navbar-fixed-top, .navbar-fixed-bottom{left: 250px}
+
+
+/*  BootStrap Files  */
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../bower_components/bootstrap-select/sass/bootstrap-select';
+
+

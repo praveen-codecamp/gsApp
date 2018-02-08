@@ -1,0 +1,35 @@
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.plusIcon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: inline-block;
+    background: green;
+    margin: 10px;
+}
+
+.plusIcon:before,
+.plusIcon:after {
+    content: '';
+    background: #888;
+    display: block;
+    position: absolute;
+}
+
+.plusIcon:before {
+    width: 90%;
+    height: 2px;
+    top: calc(50% - 1px);
+}
+
+.plusIcon:after {
+    width: 2px;
+    height: 90%;
+    left: calc(50% - 1px);
+}

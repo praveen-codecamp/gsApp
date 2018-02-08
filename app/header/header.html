@@ -1,0 +1,48 @@
+
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="menu-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                            <a class="navbar-brand" href="#">
+                                <img ng-src="{{brandLogo}}" alt="innRoad" title="innRoad">
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav flex-container">
+                                <li ng-repeat="nav in hc.navItemsList" ng-click="hc.select($index); hc.loadView(nav.navTitle); hc.setActive(nav.navTitle)" ng-class="{active : hc.activeNav === hc.nav.navTitle}">
+                                    <a href="#">
+                                        <img ng-src="{{nav.navImg}}" title="{{nav.navTitle}}" class="{{nav.navClass}}">
+                                        {{nav.navTitle}}
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="user-account dropdown">
+                                <a href="#" class="user-account-header dropdown-toggle" data-toggle="dropdown">PK</a>
+                                <ul class="user-details-dropdown dropdown-menu dropdown-menu-right">
+                                    <li><a href="#" class="user-name">Praveen Kumar</a></li>
+                                    <li><a href="#" class="user-profile">Profile</a></li>
+                                    <li><a href="#" class="user-logout">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </nav>
+                <div class="navbar navbar-inverse sub-main-nav hidden-sm">
+                    <div class="container">
+                        <ul class="nav navbar-nav sub-nav-items">
+                            <li ng-repeat="subNav in hc.subMenu" ng-click="hc.loadView(subNav)">
+                                <a href="#">
+                                {{subNav}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+        

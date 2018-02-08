@@ -1,0 +1,18 @@
+html,body{height: 100%}
+body {
+    font-family:$base-font-family-lato;
+    font-size:$base-font-size;
+    color:$base-font-color;
+    line-height: 1.5em;
+    background: $secondary-color;
+    margin: 0;
+    padding: 0
+}
+*{outline: none}
+a{}
+ul,li{list-style: none}
+* {
+    border-radius: 0
+}
+
+a:hover, a:focus{outline: none !important; box-shadow: none !important}
